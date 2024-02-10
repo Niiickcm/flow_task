@@ -32,7 +32,7 @@ const handler = async (data: InputType): Promise<ReturnType> => {
     const orgSubscription = await db.orgSubscription.findUnique({
       where: {
         orgId,
-      }
+      },
     });
 
     if (orgSubscription && orgSubscription.stripeCustomerId) {
@@ -53,14 +53,14 @@ const handler = async (data: InputType): Promise<ReturnType> => {
         line_items: [
           {
             price_data: {
-              currency: "USD",
+              currency: "BRL",
               product_data: {
-                name: "Taskify Pro",
-                description: "Unlimited boards for your organization"
+                name: "FlowTask Pro",
+                description: "Painéis ilimitados para sua organização",
               },
               unit_amount: 2000,
               recurring: {
-                interval: "month"
+                interval: "month",
               },
             },
             quantity: 1,
@@ -75,9 +75,9 @@ const handler = async (data: InputType): Promise<ReturnType> => {
     }
   } catch {
     return {
-      error: "Something went wrong!"
-    }
-  };
+      error: "Something went wrong!",
+    };
+  }
 
   revalidatePath(`/organization/${orgId}`);
   return { data: url };
