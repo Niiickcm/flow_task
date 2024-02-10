@@ -1,20 +1,20 @@
 # Fullstack Trello Clone: Next.js 14, Server Actions, React, Prisma, Stripe, Tailwind, MySQL
 
-Key Features:
+Características principais:
 
 - Auth
 - Organizations / Workspaces
-- Board creation
-- Unsplash API for random beautiful cover images
-- Activity log for entire organization
-- Board rename and delete
-- List creation
-- List rename, delete, drag & drop reorder and copy
-- Card creation
-- Card description, rename, delete, drag & drop reorder and copy
-- Card activity log
-- Board limit for every organization
-- Stripe subscription for each organization to unlock unlimited boards
+- Painéis de criação
+- Unsplash API para pegar boas imagens de capa aleatórias
+- Registro de atividades para toda a organização
+- Renomear e excluir quadro
+- Criação de lista
+- Renomear lista, excluir, arrastar e soltar, reordenar e copiar
+- Criação de Card
+- Descrição do Card, renomear, excluir, arrastar e soltar, reordenar e copiar
+- Registro de atividades do Card
+- Limite de painéis para cada organização
+- Assinatura por Stripe para cada organização para desbloquear painéis ilimitados
 - Landing page
 - MySQL DB
 - Prisma ORM
@@ -27,7 +27,7 @@ Key Features:
 ### Clone o repositorio
 
 ```shell
-git clone https://github.com/AntonioErdeljac/next13-trello.git
+git clone https://github.com/Niiickcm/flow_task.git
 ```
 
 ### Instale os pacotes
